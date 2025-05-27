@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: fastapicrud
+    restart: always
+    environment:
+      POSTGRES_DB: fastapidb
+      POSTGRES_USER: fastapiuser
+      POSTGRES_PASSWORD: fastapipass
+    ports:
+      - "5432:5432"
